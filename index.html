@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>youTube Search App</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+</head>
+<body>
+	<header role="header">
+		<span id="title">Youtube</span><span id="subtitle"> Video Search</span>
+	</header>
+	<main role="main">
+		<section>
+			<form role="form" action="#" class="js-search-form search-bar-style">
+				<label for="query"></label>
+				<input type="text" name="search" class="js-query">
+				<button type="submit">Search</button>
+			</form>
+		</section>
+		<section>
+			<h2>Results</h2>
+			<div class="js-search-results" aria-live="assertive"></div>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
